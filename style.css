@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./images/background.png);
+    background-size: cover;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    height: 595px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+header {
+    background: #43c1ca;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+.title {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 20px;
+    background-image: url('./images/banner.png');
+    background-size: cover;
+    height: 100%;
+    /*fez a imagem preencher toda a section  */
+}
+
+
+/*********FORMULARIO********** */
+#formContainer {
+    max-width: 230px;
+    background: #868686bb;
+    padding: 20px;
+    float: right;
+    border-radius: 5px;
+}
+
+.mb {
+    /***CLASSE PARA DA MARGIN**/
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+p {
+    color: white;
+}
+
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    color: white;
+    background: #48C5CE;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    color: rgb(19, 2, 2);
+    background: #16c8d5;
+
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("./images/arrow.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
+
+#aviso {
+    font-size: 13px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 2px;
+    color: black;
+    background: rgba(249, 5, 5, 0.805);
+    font-weight: bold;
+    justify-content: center;
+    display: none;
+}
+
+#card {
+    max-width: 400px;
+    min-width: 300px;
+    position: absolute;
+    background-color: rgba(243, 241, 241, 0.952);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+
+/******* FIM FORMULARIO *******/
+footer {
+    background: #151616;
+    padding: 40px;
+    text-align: center;
+}
+
+@media(min-width: 280px) and (max-width: 768px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    #formContainer {
+        background-color: rgba(44, 48, 48, 0.825);
+        max-width: 300px;
+        height: 75%;
+        width: 95vw;
+        margin: 0;
+    }
+
+    #formContainer .description {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: aliceblue;
+
+    }
+
+    input,
+    select {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    #aviso {
+        font-size: 16px;
+    }
+
+}
