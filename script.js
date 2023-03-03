@@ -1,21 +1,18 @@
 const btn = document.querySelector('#btn-submit');
 const card = document.querySelector('#card');
 const aviso = document.querySelector('#aviso')
-
-
+let inputName = document.querySelector('input#name');
+let inputEmail = document.querySelector('input#email')
+let select = document.querySelector('#select')
+const buttonLoad = document.querySelector('button')
 btn.addEventListener('click', submit);
 
 
 function submit(e) {
     e.preventDefault()
-    let inputName = document.querySelector('input#name');
-    let inputEmail = document.querySelector('input#email')
-    let select = document.querySelector('#select')
     fullName = inputName.value
     email = inputEmail.value
-    const buttonLoad = document.querySelector('button')
-
-
+    
 
     if (fullName === '' || email === '' || select.value == 'Estado') {
         aviso.style.display = 'block'
@@ -49,9 +46,6 @@ function validateEmail(email) {
     // (método) .test: boolean
     // Retorna um valor booleano que indica se existe ou não um padrão em uma string pesquisada.
 }
-
-
-
 
 function hide() {
     document.querySelector('#card').style.display = "none"
